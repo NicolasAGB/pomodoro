@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #62f0dd, #fff15c);
+}
+
+
+
+#app {
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+        "time time time time"
+        "task task task task"
+    ;
+
+    border: solid 1px #ccc;
+    padding: 20px;
+}
+
+#time {
+    width: 100%;
+    grid-area: time;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+#time #value {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    
+}
+
+input[type="text"] {
+
+    padding: 10px;
+    border: solid 1px #ccc;
+    min-width: 250px;
+
+}
+
+button,
+input[type="submit"] {
+
+    border: none;
+    background-color: #f7a120;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+
+    background-color: #fcaf3d;
+
+}
+
+.task-conteiner {
+    grid-area: task;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+
+}
+
+#task {
+    display: flex;
+  
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.task {
+ 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: initial;
+
+}
+
+.task .completed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task  .title{
+    margin: 1%;
+    color: chocolate;
+font-weight: 600;   
+}
+
+.ongoin {
+    color: black;
+    font-style: italic;
+    background-color: #fff15c;
+}
+
+.ongoin:hover {
+
+    background-color: #fae81e;
+}
+
+.done {
+    border-radius: 15%;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(64, 255, 47);
+}
